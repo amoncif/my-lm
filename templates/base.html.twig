@@ -13,6 +13,7 @@
     {% block stylesheets %}
         <!-- third party css -->
         <link href="assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <!-- third party css end -->
         <!-- App css -->
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css">
@@ -37,24 +38,8 @@
                 {% endblock %}
             </div>
         </div>
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        2018 - 2020 © Hyper - Coderthemes.com
-                    </div>
-                    <div class="col-md-6">
-                        <div class="text-md-right footer-links d-none d-md-block">
-                            <a href="javascript: void(0);">About</a>
-                            <a href="javascript: void(0);">Support</a>
-                            <a href="javascript: void(0);">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        {% include '_partials/footer.html.twig' %}
     </div>
-
 </div>
 </body>
 </html>
