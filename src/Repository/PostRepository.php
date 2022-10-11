@@ -2,26 +2,26 @@
 
 namespace App\Repository;
 
-use App\Entity\PaymentStatus;
+use App\Entity\Post;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<PaymentStatus>
+ * @extends ServiceEntityRepository<Post>
  *
- * @method PaymentStatus|null find($id, $lockMode = null, $lockVersion = null)
- * @method PaymentStatus|null findOneBy(array $criteria, array $orderBy = null)
- * @method PaymentStatus[]    findAll()
- * @method PaymentStatus[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Post|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Post|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Post[]    findAll()
+ * @method Post[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class PaymentStatusRepository extends ServiceEntityRepository
+class PostRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, PaymentStatus::class);
+        parent::__construct($registry, Post::class);
     }
 
-    public function add(PaymentStatus $entity, bool $flush = false): void
+    public function add(Post $entity, bool $flush = false): void
     {
         $this->getEntityManager()->persist($entity);
 
@@ -30,7 +30,7 @@ class PaymentStatusRepository extends ServiceEntityRepository
         }
     }
 
-    public function remove(PaymentStatus $entity, bool $flush = false): void
+    public function remove(Post $entity, bool $flush = false): void
     {
         $this->getEntityManager()->remove($entity);
 
@@ -40,7 +40,7 @@ class PaymentStatusRepository extends ServiceEntityRepository
     }
 
 //    /**
-//     * @return PaymentStatus[] Returns an array of PaymentStatus objects
+//     * @return Post[] Returns an array of Post objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -54,7 +54,7 @@ class PaymentStatusRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?PaymentStatus
+//    public function findOneBySomeField($value): ?Post
 //    {
 //        return $this->createQueryBuilder('p')
 //            ->andWhere('p.exampleField = :val')
