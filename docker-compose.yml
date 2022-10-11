@@ -2,7 +2,7 @@ version: "3.3"
 services:
   www:
     build: php
-    container_name: searchy_www
+    container_name: lmSearch_www
     ports:
       - "80:80"
     volumes:
@@ -13,9 +13,9 @@ services:
       - dev
   db:
     image: mysql
-    container_name: searchy_db
+    container_name: lmSearch_db
     environment:
-      MYSQL_DATABASE: 'searchy'
+      MYSQL_DATABASE: 'lmSearch'
       MYSQL_ROOT_PASSWORD: 'root'
     restart: always
     volumes:
@@ -25,7 +25,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin
-    container_name: searchy_phpmyadmin
+    container_name: lmSearch_phpmyadmin
     restart: always
     depends_on:
       - db
@@ -41,3 +41,7 @@ networks:
 
 volumes:
   my-db:
+
+###> doctrine/doctrine-bundle ###
+  db-data:
+###< doctrine/doctrine-bundle ###
