@@ -2,7 +2,7 @@
 
 use App\Lib\Config;
 
-class Posts
+class Article
 {
     private static $DATA = [];
 

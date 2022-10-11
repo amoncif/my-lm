@@ -15,7 +15,8 @@
         ]
     },
     "require": {
-        "monolog/monolog": "1.25.1"
+        "monolog/monolog": "1.25.1",
+        "twig/twig": "^2.0"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.4",

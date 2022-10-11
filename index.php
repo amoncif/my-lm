@@ -6,25 +6,25 @@ use App\Lib\Router;
 use App\Lib\Request;
 use App\Lib\Response;
 use App\Controller\Home;
-use App\Model\Posts;
+use App\Model\Article;
 
-Posts::load();
+Article::load();
 
 Router::get('/', function () {
     (new Home())->indexAction();
 });
 
 Router::get('/post', function (Request $req, Response $res) {
-    $res->toJSON(Posts::all());
+    $res->toJSON(Article::all());
 });
 
 Router::post('/post', function (Request $req, Response $res) {
-    $post = Posts::add($req->getJSON());
+    $post = Article::add($req->getJSON());
     $res->status(201)->toJSON($post);
 });
 
 Router::get('/post/([0-9]*)', function (Request $req, Response $res) {
-    $post = Posts::findById($req->params[0]);
+    $post = Article::findById($req->params[0]);
     if ($post) {
         $res->toJSON($post);
     } else {
