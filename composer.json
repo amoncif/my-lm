@@ -1,6 +1,6 @@
 {
-    "name": "dhgouveia/blog-api",
-    "description": "Simple Blog Api",
+    "name": "search/lemonde.fr",
+    "description": "Seachy for le monde",
     "type": "project",
     "autoload": {
         "psr-4": {
