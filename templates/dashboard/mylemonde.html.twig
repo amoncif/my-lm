@@ -25,36 +25,115 @@ p:hover {
 
                 <div class="content-page">
                     <div class="content">
-                        
-                        <!-- start page title -->
                         <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box">
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Rechercher</a></li>
-                                            <li class="breadcrumb-item active"><a href="javascript: void(0);">Réinitialiser</a></li>
-                                            <li class="breadcrumb-item active"><a href="javascript: void(0);">Sauvegarder</a></li>
-                                        </ol>
-                                    </div>
-                                    <h4 class="page-title">Saisissez votre recherche</h4>
-                                </div>
-                            </div>
-                        </div>     
-                        <!-- end page title --> 
+                            <div class="col-sm-12">
+                                <!-- Profile -->
+                                <div class="card" style="background-color: #036487">
+                                    <div class="card-body profile-user-box">
+                                        <h2 style="color: white">
+                                            Saisissez votre recherche
+                                        </h2>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <p>
+                                                    <a class="btn btn-success" data-toggle="collapse"
+                                                       href="#collapseExample" aria-expanded="false"
+                                                       aria-controls="collapseExample">
+                                                        <i class="mdi mdi-map-search-outline"></i>
+                                                        Rechercher
+                                                    </a>
+                                                    <a class="btn btn-danger"
+                                                       href="#" aria-expanded="false"
+                                                       aria-controls="collapseExample">
+                                                        <i class="mdi mdi-delete-outline"></i>
+                                                        Réinitialiser
+                                                    </a>
+                                                    <a class="btn btn-dark" data-toggle="collapse"
+                                                       href="#" aria-expanded="false">
+                                                        <i class="mdi mdi-content-save-cog-outline"></i>
+                                                        Sauvegarder
+                                                    </a>
+
+                                                </p>
+
+                                            </div> <!-- end col-->
+
+                                            <div class="col-sm-4">
+                                                <div class="text-center mt-sm-0 mt-3 text-sm-right">
+
+                                                </div>
+                                            </div> <!-- end col-->
+                                        </div> <!-- end row -->
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="collapse" id="collapseExample">
+                                                    <div class="card card-body mb-0">
+                                                        <div class="row">
+
+                                                            <div class="col-lg-4">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <label class="input-group-text" for="inputGroupSelect01">Thématiques</label>
+                                                                    </div>
+                                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                                        <option selected>Choix</option>
+                                                                        <option value="1">Politique</option>
+                                                                        <option value="2">Ukraine</option>
+                                                                        <option value="3">Guerre</option>
+                                                                        <option value="4">Football</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <label class="input-group-text" for="inputGroupSelect01">Pays</label>
+                                                                    </div>
+                                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                                        <option selected>Choix</option>
+                                                                        <option value="1">Maroc</option>
+                                                                        <option value="2">France</option>
+                                                                        <option value="3">USA</option>
+                                                                        <option value="4">Sénégale</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="form-group">
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text" id="basic-addon1"># Mots clé</span>
+                                                                        </div>
+                                                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div> <!-- end card-body/ profile-user-box-->
+                                </div><!--end profile/ card -->
+                            </div> <!-- end col-->
+                        </div>
 
                         <div class="row">
                             <div class="col-xl-6 bilbo">
-                                <div class="card ribbon-box">
-                                    <div class="card-body" style="weight:465px!important;height:425px!important;">
+                                <div class="card ribbon-box card d-block">
+                                    <div class="card-body">
                                         <div class="ribbon-two ribbon-two-danger">
                                             <span>Live
                                             <i class="mdi mdi-access-point mr-1"></i>
                                             </span>
                                         </div>
-                                        <div style="width:100%">
+                                        <div class="card-text">
                                             <div>
-                                                <img src="assets/images/guerre_ukraine_1.jpg" style="height:200px!important;" width="415px;"  />
+                                                <img src="assets/images/guerre_ukraine_1.jpg" class="card-img-top" />
                                             </div>
 
                                             <div>
@@ -239,16 +318,16 @@ p:hover {
                             </div> <!-- end col -->
 
                             <div class="col-xl-6">
-                                <div class="card ribbon-box">
-                                    <div class="card-body" style="weight:465px!important;height:425px!important;">
+                                <div class="card ribbon-box card d-block">
+                                    <div class="card-body">
                                         <div class="ribbon-two ribbon-two-danger">
                                             <span>Live
                                             <i class="mdi mdi-access-point mr-1"></i>
                                             </span>
                                         </div>
-                                        <div style="width:100%">
+                                        <div class="card-text">
                                             <div>
-                                                <img src="assets/images/messile.jpeg" style="height:200px!important;" width="415px;"  />
+                                                <img src="assets/images/messile.jpeg" class="card-img-top"  />
                                             </div>
                                             <div>
                                             </br>
@@ -434,14 +513,14 @@ p:hover {
                         <!-- end row -->
 
 
-                        <div class="row">
+                        <div class="row mt-3">
                             <div class="col-xl-6">
-                                <div class="card ribbon-box">
-                                    <div class="card-body" style="weight:465px!important;height:425px!important;">
+                                <div class="card ribbon-box card d-block">
+                                    <div class="card-body">
                                         <div class="ribbon-two ribbon-two-dark"><span>Premium</span></div>
-                                        <div style="width:100%">
+                                        <div class="card-text">
                                             <div>
-                                                <img src="assets/images/guerre_ukraine_3.jpg" style="height:200px!important;" width="415px;"  />
+                                                <img src="assets/images/guerre_ukraine_3.jpg" class="card-img-top"/>
                                             </div>
                                     
                                             <div>
@@ -569,12 +648,12 @@ p:hover {
                             </div> <!-- end col -->
                         
                             <div class="col-xl-6">
-                                <div class="card ribbon-box">
-                                    <div class="card-body" style="weight:465px!important;height:425px!important;">
+                                <div class="card ribbon-box card d-block">
+                                    <div class="card-body">
                                     <div class="ribbon-two ribbon-two-dark"><span>Premium</span></div>
-                                        <div style="width:100%">
+                                        <div class="card-text">
                                             <div>
-                                                <img src="assets/images/guerre_ukraine_6.jpg" style="height:200px!important;" width="415px;"  />
+                                                <img src="assets/images/guerre_ukraine_6.jpg" class="card-img-top"/>
                                             </div>
                                     
                                             <div>
@@ -759,15 +838,13 @@ p:hover {
                             </div> <!-- end col -->
                         </div>
                         <!-- end row -->
-
-
-                        <div class="row">
+                        <div class="row mt-3">
                             <div class="col-xl-6">
                                 <div class="card">
-                                    <div class="card-body" style="weight:465px!important;height:425px!important;">
-                                        <div style="width:100%">
+                                    <div class="card-body">
+                                        <div class="card-text">
                                             <div>
-                                                <img src="assets/images/guerre_ukraine_5.jpg" style="height:200px!important;" width="415px;"  />
+                                                <img src="assets/images/guerre_ukraine_5.jpg" class="card-img-top"/>
                                             </div>
                                     
                                             <div>
@@ -953,10 +1030,10 @@ p:hover {
                         
                             <div class="col-xl-6">
                                 <div class="card">
-                                    <div class="card-body" style="weight:465px!important;height:425px!important;">
-                                        <div style="width:100%">
+                                    <div class="card-body">
+                                        <div class="card-text">
                                             <div>
-                                                <img src="assets/images/guerre_ukraine_4.jpg" style="height:200px!important;" width="415px;"  />
+                                                <img src="assets/images/guerre_ukraine_4.jpg" class="card-img-top" />
                                             </div>
                                     
                                             <div>
@@ -1141,16 +1218,16 @@ p:hover {
                             </div> <!-- end col -->
                         </div>
                         <!-- end row -->
-
-
-                        <div class="row">
+                        <div class="row mt-3">
                             <div class="col-xl-6">
-                                <div class="card ribbon-box">
-                                    <div class="card-body" style="weight:465px!important;height:425px!important;">
+                                <div class="card ribbon-box card d-block">
+                                    <div class="card-body">
                                         <div class="ribbon-two ribbon-two-success"><span>Vidéo</span></div>
-                                        <div style="width:100%">
-                                        <div style="position:relative;padding-bottom:47.25%;height:0;overflow:hidden;"> <iframe style="width:415px;height:200px;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x8ecfwy" width="415px" height="200px" allowfullscreen > </iframe> </div>
-                                    
+                                        <div  class="card-text">
+                                            <!-- 4:3 aspect ratio -->
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iDnM8ctVzB0?ecver=1"></iframe>
+                                            </div>
                                             <div>
                                             </br>
                                                 <h3 class="header-title" style="font-family: 'PT Serif', serif;font-weight:bold;color:black;">Vidéo. Guerre en Ukraine : quatre villes, dont Kiev et Lviv, bombardées par l’armée russe</h3>
@@ -1331,13 +1408,12 @@ p:hover {
                                     </div> <!-- end card-body -->
                                 </div> <!-- end card-->
                             </div> <!-- end col -->
-
                             <div class="col-xl-6">
                                 <div class="card">
-                                    <div class="card-body" style="weight:465px!important;height:425px!important;">
-                                        <div style="width:100%">
+                                    <div class="card-body" >
+                                        <div class="card-text" style="width:100%">
                                             <div>
-                                                <img src="assets/images/guerre_ukraine_7.jpg" style="height:200px!important;" width="415px;"  />
+                                                <img src="assets/images/guerre_ukraine_7.jpg" class="card-img-top" />
                                             </div>
                                     
                                             <div>
@@ -1466,24 +1542,26 @@ p:hover {
                         
                         </div>
                         <!-- end row -->
-                    <nav aria-label="...">
-    <ul class="pagination mb-0">
-        <li class="page-item disabled">
-        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Précédent</a>
-        </li>
-        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-        <li class="page-item" aria-current="page">
-        <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-        <a class="page-link" href="#">Suivant</a>
-        </li>
-    </ul>
-</nav>
                     </div> <!-- End Content -->
 
                 </div> <!-- content-page -->
+                <div class="row">
+                    <nav aria-label="...">
+                        <ul class="pagination mb-0">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Précédent</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item" aria-current="page">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Suivant</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
             </div> <!-- end wrapper-->
         </div>    

@@ -30,16 +30,41 @@
     </head>
 <body class="" data-layout="topnav" data-layout-config="{&quot;layoutBoxed&quot;:false,&quot;darkMode&quot;:false,&quot;showRightSidebarOnStart&quot;: true}">
 <div class="wrapper">
+    <div class="left-side-menu left-side-menu-detached mm-active bg-white" style="background: linear-gradient(135deg,#6379c3 0,#026387 60%);">
+
+        <div class="leftbar-user">
+
+        </div>
+
+        <!--- Sidemenu -->
+        <ul class="metismenu side-nav mm-show">
+
+            <li class="side-nav-title side-nav-item mt-3">Mon filtre perso</li>
+            <div class="button-list pl-2">
+                <button  type="button" class="btn btn-secondary" data-target="#scrollable-modal"><i class="mdi mdi-close"></i> Politique</button>
+                <button type="button" class="btn btn-primary" data-target="#standard-modal"><i class="mdi mdi-close"></i> Ukraine</button>
+                <button  type="button" class="btn btn-danger" data-target="#fill-danger-modal"><i class="mdi mdi-close"></i> Guerre</button>
+            </div>
+            <li class="side-nav-item">
+            </li>
+        </ul>
+
+        <!-- End Sidebar -->
+
+        <div class="clearfix"></div>
+        <!-- Sidebar -left -->
+
+    </div>
     <div class="content-page">
         <div class="content">
             {% include '_partials/header.html.twig' %}
-            <div class="container-fluid">
+            <div class="container-fluid mm-active">
                 {% block body %}
                 {% endblock %}
             </div>
         </div>
-        {% include '_partials/footer.html.twig' %}
     </div>
+    {% include '_partials/footer.html.twig' %}
 </div>
 </body>
 </html>
