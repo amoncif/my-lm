@@ -26,11 +26,17 @@
         <script src="assets/js/vendor.min.js"></script>
         <script src="assets/js/app.min.js"></script>
         <script src="assets/js/pages/demo.dashboard.js"></script>
+        <script>
+            $("#blabla").click(function(){
+                $("#coucou").hide();
+            });
+
+        </script>
     {% endblock %}
     </head>
 <body class="" data-layout="topnav" data-layout-config="{&quot;layoutBoxed&quot;:false,&quot;darkMode&quot;:false,&quot;showRightSidebarOnStart&quot;: true}">
 <div class="wrapper">
-    <div class="left-side-menu left-side-menu-detached mm-active bg-white" style="background: linear-gradient(135deg,#6379c3 0,#026387 60%);">
+    <div class="left-side-menu left-side-menu-detached mm-active bg-white"  id="coucou" style="background: linear-gradient(135deg,#6379c3 0,#026387 60%);">
 
         <div class="leftbar-user">
 
